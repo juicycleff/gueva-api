@@ -1,5 +1,3 @@
-#import * from '../entry.grapql'
-
 input CreateProductInput {
 	name: String!
 	description: String
@@ -15,7 +13,7 @@ input UpdateProductInput {
   currency: CurrencyInput
 }
 
-type Product implements INode {
+type Product {
   	#  Generated id for a user. read-only
   _id: ID!
   #  A unique identifier for the object.

@@ -13,7 +13,7 @@ input ChangePasswordInput {
 	newPassword: String!
 }
 
-type User implements IEntity {
+type User {
 		#  Generated id for a user. read-only
   _id: ID!
   #  A unique identifier for the object.
